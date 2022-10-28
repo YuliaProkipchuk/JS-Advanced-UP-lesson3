@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #1e2530;
+}
+h1,h1+p,.to-do {
+  width: 80%;
+  margin: 15px auto;
+}
+h1+p {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+body {
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+}
+.add-btn {
+  color: white;
+  background-color: #27a745;
+  width: 150px;
+  text-align: center;
+  border-style: none;
+  border-radius: 3px;
+  height: 36px;
+}
+hr+input {
+  height: 36px;
+  margin: 10px;
+  border-radius: 3px;
+  border: none;
+  width: 86%;
+  padding: 5px;
+}
+input:focus{
+    border:2px solid #8aa8d3;
+    outline-color: #8aa8d3;
+}

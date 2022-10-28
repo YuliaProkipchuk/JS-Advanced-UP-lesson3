@@ -1,0 +1,31 @@
+<div class="userlist">
+    <div class="headings">
+        <p class="names">#</p>
+        <p class="names">Task</p>
+        <p class="names">Check</p>
+        <p class="names">DONE/IN PROGRESS</p>
+        <p class="names">Edit</p>
+        <p class="names">DELETE</p>
+    </div>
+    <div class="ulist">
+        <table>
+            <tr *ngFor="let item of taskArray; index as i">
+                <td>{{i+1}}</td>
+                <td>{{item.name}}</td>
+                <td><input type="checkbox" [(ngModel)]="item.status" (click)="check(i)">
+                </td>
+                <td [ngClass]="item.class">{{item.progress}}</td>
+                <td><input type="button" class="edit-btn" value="Edit" (click)="editTask(i)"></td>
+                <td><button class="delete-btn" [disabled]="item.disbtn" (click)="deleteTask(i)">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div *ngIf="expression">
+    <div class="edits">
+        <div>
+            <input type="text" [(ngModel)]="editInput" class="saveInput">
+        </div>
+        <button (click)="saveTask()" class="save-btn">save</button>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+.headings{
+    display: flex;
+    width: 100%;
+    padding-left: 10px;
+    font-weight: 700;
+    border-bottom: 3px solid #f2f2f2;
+    border-top: 3px solid #f2f2f2;
+}
+.edit-btn, .delete-btn{
+    border-style: none;
+    border-radius: 3px;
+    height:36px;
+    cursor: pointer;
+}
+
+.edit-btn{
+    background-color: #ffbd22;
+    width: 60px;
+}
+.delete-btn{
+    width: 80px;
+    color: white;
+    background-color: #ea4846;
+}
+.delete-btn:disabled{
+    background-color: #de717a;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+tr:hover{
+    background-color: #dedede;
+    cursor: pointer;
+}
+tr{
+   height: 45px;
+}
+td:nth-of-type(1){
+    padding-left: 10px;
+    font-weight: 600;
+    width: 67px;
+}
+td:nth-of-type(2){
+    width: 224px;
+    padding-left: 7px;
+}
+td:nth-of-type(3){
+    width: 155px;
+}
+td:nth-of-type(4){
+    width: 455px;
+}
+td:nth-of-type(5){
+    width: 163px;
+}
+.names:nth-of-type(1){
+    width: 63px;
+}
+.names:nth-of-type(2){
+    width: 200px;
+}
+.names:nth-of-type(3){
+    width: 150px;
+}
+.names:nth-of-type(4){
+    width: 495px;
+}
+.names:nth-of-type(5){
+    width: 160px;
+}
+.saveInput{
+    border-radius: 3px;
+    border: none;
+    height: 36px;
+    width: 200px;
+    padding: 5px;
+    margin-right: 10px;
+}
+.save-btn{
+  color: white;
+  background-color: #27a745;
+  width: 50px;
+  text-align: center;
+  border-style: none;
+  border-radius: 3px;
+  margin-right: 20px;
+  height: 36px;
+  justify-self: flex-end;
+}
+button:hover{
+    cursor: pointer;
+}
+.edits>div{
+    width: 500px;
+}
+.edits{
+    background-color: #e8e6e6;
+    width: 80%;
+    height: 70px;
+    display: flex;
+    margin-top: 15px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.done{
+    color: #27a745;
+}
+.inprogress{
+    color: #ea4846;
+}

@@ -1,0 +1,10 @@
+<h1>Plan your day!</h1>
+<p>User: Yuliia. Count of Task {{countTask}}</p>
+
+<div class="to-do">
+    <hr>
+    <input type="text" [(ngModel)]="taskName">
+    <button (click)="addTask()" class="add-btn">Add</button>
+    <hr>
+    <app-table-list [taskArray]="objectArray" (taskCount)="getCount($event)"></app-table-list>
+</div>
